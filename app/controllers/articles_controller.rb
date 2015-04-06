@@ -1,5 +1,11 @@
 class ArticlesController < ApplicationController
 	
+
+	def count
+	num_of_articles = Article.all.count
+	render :json => {count: num_of_articles}
+	end
+		
 	def destroy
 	@article = Article.find(params[:id])
 	@article.destroy
