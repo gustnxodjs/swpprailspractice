@@ -1,0 +1,2 @@
+@HoorayFunction = () -> alert
+"Hooray!"
